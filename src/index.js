@@ -8,12 +8,11 @@ const Header = () => {
     backgroundColor:"DogerBlue",
     padding: "10px",
     fontFamily: "Sans-Seif"
-
   };
 
   return (
     <>
-      <h1 style={mystyle}>Hello Style!</h1>
+      <h1 style = {mystyle} >Hello Style!</h1>
       <p>A littel style!</p>
     </>
     );
