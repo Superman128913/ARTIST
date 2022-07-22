@@ -1,18 +1,21 @@
-import {usetState} from "react";
-import { ReactDOM } from "react";
+import { useState } from "react";
+import ReactDOM from "react-dom/client";
 
-function myForm() {
-  const [textarea,setTextarea] = usetState("The content of a textarea goes in the valeu attribute.");
+function MyForm() {
+  const [textarea, setTextarea] = useState(
+    "The content of a textarea goes in the value attribute"
+  );
+
   const handleChange = (event) => {
-    setTextarea(event.target.value);
+    setTextarea(event.target.value)
   }
-  
+
   return (
     <form>
-      <textarea value = {textarea} onChange = {handleChange}/>
+      <textarea value={textarea} onChange={handleChange} />
     </form>
-  );
+  )
 }
 
-const root = ReactDOM.crateRoot(document.getElementById("root"));
-root.render(<myForm/>);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<MyForm />);
