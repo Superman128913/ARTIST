@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
-import './my-saas.sass'
+import './my-sass.sass'
 
 const Header = () => {
   const mystyle = {
@@ -18,5 +18,5 @@ const Header = () => {
     );
 }
 
-const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Header/>);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Header />);
