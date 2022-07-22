@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 function MyForm() {
   const [textarea, setTextarea] = useState(
-    "The content of a textarea goes in the value attribute"
+    "This world who more than love sun."
   );
 
   const handleChange = (event) => {
