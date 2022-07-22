@@ -1,20 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, {useState} from "react";
+import ReactDOM from "react-dom/client";
 
-const Header = () => {
-  const myStyle = {
-    color: "white",
-    backgroundColor: "DodgerBlue",
-    padding: "10px",
-    fontFamily: "Sans-Serif"
-  };
+function FavoriteColor()
+{
+  const [color,setColor]= useState("red");
+
   return (
     <>
-      <h1 style={myStyle}>Hello Style!</h1>
-      <p>Add a little style!</p>
+      <h1>My favorite color is  {color}</h1>
+      <button 
+        type="button"
+        onClick={() => setColor("blue")}
+        >Blue </button>
+
+      <button  
+        type="button"
+        onClick={() => setColor("yellow")}
+        >Yellow </button>
+      <button 
+        type="button"
+        onClick={() => setColor("red")}
+        >Red </button>
+
+<button 
+        type="button"
+        onClick={() => setColor("green")}
+        >Green</button>
     </>
-  );
+  )
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Header />);
+const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(<FavoriteColor/>)
